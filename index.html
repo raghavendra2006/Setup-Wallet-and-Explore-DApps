@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web3 &amp; Blockchain Basics — Setup Wallet &amp; Explore DApps</title>
+  <meta name="description" content="Interactive educational guide to blockchain technology, Web3 concepts, crypto wallets, testnets, and decentralized applications. Learn by doing in a risk-free environment." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon">◆</span>
+        <span>Web3<span class="logo-accent">Basics</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#concepts" class="nav-link">Concepts</a></li>
+        <li><a href="#wallet" class="nav-link">Wallet</a></li>
+        <li><a href="#testnet" class="nav-link">Testnet</a></li>
+        <li><a href="#dapps" class="nav-link">DApps</a></li>
+        <li><a href="#explorer" class="nav-link">Explorer</a></li>
+        <li><a href="#security" class="nav-link">Security</a></li>
+        <li><a href="#submission" class="nav-link nav-cta">Submission</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+      <div class="hero-glow hero-glow-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Hands-On Learning Experience
+      </div>
+      <h1 class="hero-title">
+        Master <span class="gradient-text">Web3</span> &amp;
+        <span class="gradient-text-alt">Blockchain</span> Basics
+      </h1>
+      <p class="hero-subtitle">
+        Set up your first crypto wallet, explore testnets, and interact with decentralized applications — all in a risk-free environment. Your gateway to the decentralized future starts here.
+      </p>
+      <div class="hero-actions">
+        <a href="#concepts" class="btn btn-primary">
+          <span>Start Learning</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#submission" class="btn btn-outline">
+          <span>Submission Guide</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">8</span>
+          <span class="stat-label">Sections</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">5</span>
+          <span class="stat-label">Core Skills</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">∞</span>
+          <span class="stat-label">Risk-Free</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="blockchain-anim">
+        <div class="block block-1">
+          <div class="block-inner">
+            <span class="block-hash">#001</span>
+            <span class="block-label">Genesis</span>
+          </div>
+        </div>
+        <div class="chain-link"></div>
+        <div class="block block-2">
+          <div class="block-inner">
+            <span class="block-hash">#002</span>
+            <span class="block-label">Smart Contract</span>
+          </div>
+        </div>
+        <div class="chain-link"></div>
+        <div class="block block-3">
+          <div class="block-inner">
+            <span class="block-hash">#003</span>
+            <span class="block-label">Transaction</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BLOCKCHAIN CONCEPTS ==================== -->
+  <section class="section" id="concepts">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 — Foundation</span>
+        <h2 class="section-title">Blockchain &amp; Web3 <span class="gradient-text">Fundamentals</span></h2>
+        <p class="section-desc">Click any card to explore the concept in depth. These are the building blocks of everything in the decentralized ecosystem.</p>
+      </div>
+
+      <div class="concept-grid">
+        <!-- Card 1: Distributed Ledger -->
+        <div class="concept-card" data-card="ledger">
+          <div class="card-front">
+            <div class="card-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/>
+                <rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>
+                <path d="M10 6.5h4M6.5 10v4M17.5 10v4M10 17.5h4" stroke-dasharray="2 2"/>
+              </svg>
+            </div>
+            <h3>Distributed Ledger</h3>
+            <p>A database shared across multiple nodes, ensuring transparency and redundancy.</p>
+            <span class="card-flip-hint">Click to learn more →</span>
+          </div>
+          <div class="card-back">
+            <h3>Distributed Ledger Technology</h3>
+            <p>Unlike traditional databases controlled by a single entity, a <strong>distributed ledger</strong> is replicated across thousands of computers (nodes) worldwide.</p>
+            <ul>
+              <li><strong>Immutability:</strong> Once recorded, data cannot be altered without consensus from the network</li>
+              <li><strong>Transparency:</strong> All participants can view the entire transaction history</li>
+              <li><strong>No Single Point of Failure:</strong> The network continues even if individual nodes go offline</li>
+              <li><strong>Trustless:</strong> No need to trust a central authority — math and code enforce the rules</li>
+            </ul>
+            <span class="card-flip-hint">← Click to flip back</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Consensus Mechanisms -->
+        <div class="concept-card" data-card="consensus">
+          <div class="card-front">
+            <div class="card-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="9"/><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/>
+                <path d="M12 8v4l3 3"/>
+              </svg>
+            </div>
+            <h3>Consensus Mechanisms</h3>
+            <p>How decentralized networks agree on the state of the blockchain.</p>
+            <span class="card-flip-hint">Click to learn more →</span>
+          </div>
+          <div class="card-back">
+            <h3>Consensus Mechanisms</h3>
+            <p>Consensus mechanisms ensure all nodes agree on which transactions are valid.</p>
+            <ul>
+              <li><strong>Proof of Work (PoW):</strong> Miners solve complex puzzles to validate blocks. Used by Bitcoin. Energy-intensive but battle-tested</li>
+              <li><strong>Proof of Stake (PoS):</strong> Validators lock up (stake) cryptocurrency as collateral. Ethereum moved to PoS in "The Merge" (2022), reducing energy usage by ~99.95%</li>
+              <li><strong>Delegated PoS:</strong> Token holders vote for delegates who validate transactions</li>
+            </ul>
+            <span class="card-flip-hint">← Click to flip back</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Smart Contracts -->
+        <div class="concept-card" data-card="smart">
+          <div class="card-front">
+            <div class="card-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                <polyline points="14,2 14,8 20,8"/><path d="M8 13h8M8 17h5"/>
+              </svg>
+            </div>
+            <h3>Smart Contracts</h3>
+            <p>Self-executing programs stored on the blockchain that automate agreements.</p>
+            <span class="card-flip-hint">Click to learn more →</span>
+          </div>
+          <div class="card-back">
+            <h3>Smart Contracts</h3>
+            <p><strong>Smart contracts</strong> are programs deployed on the blockchain that automatically execute when predetermined conditions are met.</p>
+            <ul>
+              <li><strong>Immutable:</strong> Once deployed, code cannot be changed (though upgradeable patterns exist)</li>
+              <li><strong>Deterministic:</strong> Same inputs always produce the same outputs across all nodes</li>
+              <li><strong>Gas Fees:</strong> Every computation costs "gas" — a fee paid in ETH to compensate validators</li>
+              <li><strong>Languages:</strong> Primarily written in Solidity (Ethereum) or Rust (Solana)</li>
+            </ul>
+            <span class="card-flip-hint">← Click to flip back</span>
+          </div>
+        </div>
+
+        <!-- Card 4: Gas Fees -->
+        <div class="concept-card" data-card="gas">
+          <div class="card-front">
+            <div class="card-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3>Gas Fees &amp; Transactions</h3>
+            <p>The cost of computation on the blockchain and how transactions work.</p>
+            <span class="card-flip-hint">Click to learn more →</span>
+          </div>
+          <div class="card-back">
+            <h3>Gas Fees &amp; Transactions</h3>
+            <p>Every operation on Ethereum requires <strong>gas</strong> — a unit measuring computational effort.</p>
+            <ul>
+              <li><strong>Gas Price:</strong> Measured in Gwei (1 Gwei = 0.000000001 ETH). Higher gas = faster confirmation</li>
+              <li><strong>Gas Limit:</strong> Maximum gas you're willing to spend on a transaction</li>
+              <li><strong>Transaction Fee:</strong> Gas Used × Gas Price. Simple transfers cost ~21,000 gas</li>
+              <li><strong>EIP-1559:</strong> Introduced base fee + priority tip model for more predictable pricing</li>
+              <li><strong>Testnets:</strong> Gas fees on testnets (like Sepolia) cost nothing — perfect for learning!</li>
+            </ul>
+            <span class="card-flip-hint">← Click to flip back</span>
+          </div>
+        </div>
+
+        <!-- Card 5: Web2 vs Web3 -->
+        <div class="concept-card" data-card="web3">
+          <div class="card-front">
+            <div class="card-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 014 10 15 15 0 01-4 10 15 15 0 01-4-10 15 15 0 014-10z"/>
+              </svg>
+            </div>
+            <h3>Web2 vs Web3</h3>
+            <p>The paradigm shift from centralized platforms to user-owned decentralized apps.</p>
+            <span class="card-flip-hint">Click to learn more →</span>
+          </div>
+          <div class="card-back">
+            <h3>Web2 → Web3 Evolution</h3>
+            <div class="comparison-table">
+              <div class="comp-row comp-header">
+                <span>Aspect</span><span>Web2</span><span>Web3</span>
+              </div>
+              <div class="comp-row">
+                <span>Data</span><span>Company-owned</span><span>User-owned</span>
+              </div>
+              <div class="comp-row">
+                <span>Identity</span><span>Email/password</span><span>Wallet address</span>
+              </div>
+              <div class="comp-row">
+                <span>Payments</span><span>Banks/PayPal</span><span>Crypto/tokens</span>
+              </div>
+              <div class="comp-row">
+                <span>Trust</span><span>Institutions</span><span>Code/math</span>
+              </div>
+              <div class="comp-row">
+                <span>Censorship</span><span>Possible</span><span>Resistant</span>
+              </div>
+            </div>
+            <span class="card-flip-hint">← Click to flip back</span>
+          </div>
+        </div>
+
+        <!-- Card 6: Cryptography -->
+        <div class="concept-card" data-card="crypto">
+          <div class="card-front">
+            <div class="card-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/>
+                <circle cx="12" cy="16" r="1"/>
+              </svg>
+            </div>
+            <h3>Cryptographic Principles</h3>
+            <p>The math that secures wallets, transactions, and the entire blockchain.</p>
+            <span class="card-flip-hint">Click to learn more →</span>
+          </div>
+          <div class="card-back">
+            <h3>Cryptographic Principles</h3>
+            <p>Blockchain security relies on several cryptographic primitives:</p>
+            <ul>
+              <li><strong>Hash Functions (SHA-256):</strong> Convert any data into a fixed-length string. Even tiny changes create completely different hashes</li>
+              <li><strong>Public-Key Cryptography:</strong> Your wallet has a public key (your address) and a private key (your secret). Only the private key can sign transactions</li>
+              <li><strong>Digital Signatures:</strong> Prove you authorized a transaction without revealing your private key</li>
+              <li><strong>Merkle Trees:</strong> Efficiently verify large sets of data by organizing hashes in a tree structure</li>
+            </ul>
+            <span class="card-flip-hint">← Click to flip back</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WALLET SETUP ==================== -->
+  <section class="section section-alt" id="wallet">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 — Setup</span>
+        <h2 class="section-title">MetaMask <span class="gradient-text">Wallet Setup</span></h2>
+        <p class="section-desc">Follow these steps to install and configure your first crypto wallet. MetaMask is the most popular Ethereum wallet, used by millions worldwide.</p>
+      </div>
+
+      <div class="steps-container">
+        <!-- Step 1 -->
+        <div class="step-card" data-step="1">
+          <div class="step-header">
+            <div class="step-number">01</div>
+            <h3 class="step-title">Install MetaMask Extension</h3>
+            <button class="step-toggle" aria-label="Toggle step details">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </div>
+          <div class="step-content">
+            <div class="step-body">
+              <p>Navigate to the official MetaMask website and install the browser extension.</p>
+              <div class="step-actions">
+                <a href="https://metamask.io/download/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Download MetaMask
+                </a>
+              </div>
+              <div class="warning-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                <div>
+                  <strong>Security Warning:</strong> Only download MetaMask from <code>metamask.io</code>. Never install from third-party sources — malicious clones exist that will steal your funds.
+                </div>
+              </div>
+              <ol class="step-checklist">
+                <li>Visit <a href="https://metamask.io" target="_blank" rel="noopener">metamask.io</a></li>
+                <li>Click "Download" and select your browser (Chrome, Firefox, Brave, or Edge)</li>
+                <li>Click "Add to [Browser]" in the extension store</li>
+                <li>Pin the MetaMask extension to your toolbar for easy access</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card" data-step="2">
+          <div class="step-header">
+            <div class="step-number">02</div>
+            <h3 class="step-title">Create Your Wallet</h3>
+            <button class="step-toggle" aria-label="Toggle step details">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </div>
+          <div class="step-content">
+            <div class="step-body">
+              <p>Set up a new wallet and securely back up your recovery phrase.</p>
+              <ol class="step-checklist">
+                <li>Open the MetaMask extension and click <strong>"Create a New Wallet"</strong></li>
+                <li>Create a strong password (min. 8 characters). This password protects your wallet on this device</li>
+                <li>MetaMask will display your <strong>Secret Recovery Phrase</strong> (12 words)</li>
+                <li><strong>Write these words down on paper</strong> in the exact order shown</li>
+                <li>Confirm your recovery phrase by selecting the words in the correct order</li>
+              </ol>
+              <div class="warning-box warning-critical">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
+                <div>
+                  <strong>CRITICAL — Seed Phrase Security:</strong>
+                  <ul>
+                    <li>Never store your seed phrase digitally (no screenshots, no cloud storage, no notes apps)</li>
+                    <li>Never share it with anyone — no legitimate service will ever ask for it</li>
+                    <li>Store the written copy in a secure, offline location</li>
+                    <li>If someone gets your seed phrase, they can steal all your crypto</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card" data-step="3">
+          <div class="step-header">
+            <div class="step-number">03</div>
+            <h3 class="step-title">Configure Sepolia Testnet</h3>
+            <button class="step-toggle" aria-label="Toggle step details">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </div>
+          <div class="step-content">
+            <div class="step-body">
+              <p>Switch MetaMask from the Ethereum Mainnet to the Sepolia test network.</p>
+              <ol class="step-checklist">
+                <li>Click the <strong>network dropdown</strong> at the top of MetaMask (shows "Ethereum Mainnet" by default)</li>
+                <li>Click <strong>"Show test networks"</strong> toggle (if not visible, go to Settings → Advanced → Show test networks)</li>
+                <li>Select <strong>"Sepolia"</strong> from the list of available networks</li>
+                <li>Your MetaMask should now show "Sepolia" in the network selector</li>
+                <li>Your balance will show <strong>0 SepoliaETH</strong> — we'll fix that in the next section!</li>
+              </ol>
+              <div class="info-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+                <div>
+                  <strong>Why Sepolia?</strong> Sepolia is the recommended Ethereum testnet. It mirrors the Ethereum mainnet environment but uses valueless test ETH, making it perfect for learning without financial risk. Goerli is being deprecated.
+                </div>
+              </div>
+              <div class="network-details">
+                <h4>Sepolia Network Details</h4>
+                <div class="detail-grid">
+                  <div class="detail-item"><span class="detail-label">Network Name</span><span class="detail-value">Sepolia</span></div>
+                  <div class="detail-item"><span class="detail-label">Chain ID</span><span class="detail-value">11155111</span></div>
+                  <div class="detail-item"><span class="detail-label">Currency</span><span class="detail-value">SepoliaETH</span></div>
+                  <div class="detail-item"><span class="detail-label">Block Explorer</span><span class="detail-value">sepolia.etherscan.io</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTNET & FAUCETS ==================== -->
+  <section class="section" id="testnet">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 — Fund</span>
+        <h2 class="section-title">Obtain <span class="gradient-text">Testnet ETH</span></h2>
+        <p class="section-desc">Faucets are services that distribute free testnet tokens. You'll need test ETH to pay for gas fees when interacting with DApps on the testnet.</p>
+      </div>
+
+      <div class="two-col">
+        <div class="faucet-guide">
+          <div class="step-card" data-step="f1">
+            <div class="step-header">
+              <div class="step-number">01</div>
+              <h3 class="step-title">Copy Your Wallet Address</h3>
+              <button class="step-toggle" aria-label="Toggle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+            </div>
+            <div class="step-content">
+              <div class="step-body">
+                <ol class="step-checklist">
+                  <li>Open MetaMask and ensure you're on <strong>Sepolia</strong> network</li>
+                  <li>Click your account name at the top to <strong>copy your address</strong></li>
+                  <li>Your address looks like: <code>0x1234...abcd</code> (42 characters starting with 0x)</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="step-card" data-step="f2">
+            <div class="step-header">
+              <div class="step-number">02</div>
+              <h3 class="step-title">Request Testnet ETH from a Faucet</h3>
+              <button class="step-toggle" aria-label="Toggle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+            </div>
+            <div class="step-content">
+              <div class="step-body">
+                <p>Choose any of these reliable Sepolia faucets:</p>
+                <div class="faucet-links">
+                  <a href="https://cloud.google.com/application/web3/faucet/ethereum/sepolia" target="_blank" rel="noopener" class="faucet-link">
+                    <span class="faucet-name">Google Cloud Faucet</span>
+                    <span class="faucet-amount">0.05 ETH / day</span>
+                  </a>
+                  <a href="https://www.alchemy.com/faucets/ethereum-sepolia" target="_blank" rel="noopener" class="faucet-link">
+                    <span class="faucet-name">Alchemy Faucet</span>
+                    <span class="faucet-amount">0.5 ETH / day</span>
+                  </a>
+                  <a href="https://www.infura.io/faucet/sepolia" target="_blank" rel="noopener" class="faucet-link">
+                    <span class="faucet-name">Infura Faucet</span>
+                    <span class="faucet-amount">0.5 ETH / day</span>
+                  </a>
+                  <a href="https://sepolia-faucet.pk910.de/" target="_blank" rel="noopener" class="faucet-link">
+                    <span class="faucet-name">PoW Faucet</span>
+                    <span class="faucet-amount">Mine testnet ETH</span>
+                  </a>
+                </div>
+                <ol class="step-checklist">
+                  <li>Visit a faucet (some may require account creation)</li>
+                  <li>Paste your MetaMask wallet address</li>
+                  <li>Complete any captcha or verification</li>
+                  <li>Click "Send" / "Request" to receive test ETH</li>
+                  <li>Wait 15-30 seconds for the transaction to confirm</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="step-card" data-step="f3">
+            <div class="step-header">
+              <div class="step-number">03</div>
+              <h3 class="step-title">Verify on Etherscan</h3>
+              <button class="step-toggle" aria-label="Toggle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+            </div>
+            <div class="step-content">
+              <div class="step-body">
+                <ol class="step-checklist">
+                  <li>Check your MetaMask balance — it should now show SepoliaETH</li>
+                  <li>Visit <a href="https://sepolia.etherscan.io" target="_blank" rel="noopener">sepolia.etherscan.io</a></li>
+                  <li>Paste your wallet address in the search bar</li>
+                  <li>You should see the incoming transaction from the faucet</li>
+                </ol>
+                <div class="tx-anatomy">
+                  <h4>Transaction Anatomy</h4>
+                  <div class="tx-fields">
+                    <div class="tx-field">
+                      <span class="tx-field-name">Transaction Hash</span>
+                      <span class="tx-field-desc">Unique identifier for this transaction (like a receipt number)</span>
+                    </div>
+                    <div class="tx-field">
+                      <span class="tx-field-name">From</span>
+                      <span class="tx-field-desc">The faucet's wallet address that sent you ETH</span>
+                    </div>
+                    <div class="tx-field">
+                      <span class="tx-field-name">To</span>
+                      <span class="tx-field-desc">Your wallet address (the recipient)</span>
+                    </div>
+                    <div class="tx-field">
+                      <span class="tx-field-name">Value</span>
+                      <span class="tx-field-desc">The amount of ETH transferred</span>
+                    </div>
+                    <div class="tx-field">
+                      <span class="tx-field-name">Gas Fee</span>
+                      <span class="tx-field-desc">The cost paid for processing this transaction</span>
+                    </div>
+                    <div class="tx-field">
+                      <span class="tx-field-name">Block</span>
+                      <span class="tx-field-desc">The block number where this transaction was included</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testnet-info-sidebar">
+          <div class="info-card glass-card">
+            <h3>🧪 What is a Testnet?</h3>
+            <p>A testnet is a parallel blockchain that mirrors the mainnet but uses worthless tokens. It's a sandbox where developers and learners can experiment without risking real money.</p>
+          </div>
+          <div class="info-card glass-card">
+            <h3>💧 What is a Faucet?</h3>
+            <p>A faucet is a web service that distributes free testnet tokens. Since testnet tokens have no real value, faucets help you get started quickly.</p>
+          </div>
+          <div class="info-card glass-card">
+            <h3>🔍 What is Etherscan?</h3>
+            <p>Etherscan is a <strong>block explorer</strong> — a search engine for the Ethereum blockchain. It lets you look up any transaction, address, or block in real-time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== DAPP INTERACTION ==================== -->
+  <section class="section section-alt" id="dapps">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 — Interact</span>
+        <h2 class="section-title">Interact with <span class="gradient-text">DApps</span></h2>
+        <p class="section-desc">Connect your wallet to real decentralized applications and perform your first on-chain transactions. Experience the future of the internet firsthand.</p>
+      </div>
+
+      <div class="dapp-tabs">
+        <button class="dapp-tab active" data-tab="uniswap">
+          <span class="tab-icon">🦄</span> Uniswap (Token Swap)
+        </button>
+        <button class="dapp-tab" data-tab="opensea">
+          <span class="tab-icon">🌊</span> OpenSea (NFTs)
+        </button>
+      </div>
+
+      <div class="dapp-content">
+        <!-- Uniswap Tab -->
+        <div class="dapp-panel active" id="panel-uniswap">
+          <div class="dapp-intro">
+            <div class="dapp-logo">🦄</div>
+            <div>
+              <h3>Uniswap — Decentralized Exchange</h3>
+              <p>Uniswap is the largest decentralized exchange (DEX) that allows you to swap tokens without intermediaries. It uses an <strong>Automated Market Maker (AMM)</strong> model instead of traditional order books.</p>
+            </div>
+          </div>
+
+          <div class="dapp-steps">
+            <div class="dapp-step">
+              <div class="dapp-step-num">1</div>
+              <div class="dapp-step-content">
+                <h4>Navigate to Uniswap</h4>
+                <p>Visit <a href="https://app.uniswap.org" target="_blank" rel="noopener">app.uniswap.org</a>. The interface will detect you're on the Sepolia testnet automatically.</p>
+              </div>
+            </div>
+            <div class="dapp-step">
+              <div class="dapp-step-num">2</div>
+              <div class="dapp-step-content">
+                <h4>Connect Your Wallet</h4>
+                <p>Click <strong>"Connect Wallet"</strong> → Select <strong>"MetaMask"</strong>. A MetaMask popup will ask you to approve the connection. Review the permissions and click <strong>"Connect"</strong>.</p>
+              </div>
+            </div>
+            <div class="dapp-step">
+              <div class="dapp-step-num">3</div>
+              <div class="dapp-step-content">
+                <h4>Set Up the Swap</h4>
+                <p>Select <strong>ETH</strong> as the token you're swapping from. Choose a token to swap to (e.g., <strong>USDC</strong> or <strong>DAI</strong>). Enter a small amount (e.g., 0.01 ETH).</p>
+              </div>
+            </div>
+            <div class="dapp-step">
+              <div class="dapp-step-num">4</div>
+              <div class="dapp-step-content">
+                <h4>Review &amp; Confirm</h4>
+                <p>Click <strong>"Swap"</strong>. Review the transaction details including:</p>
+                <ul>
+                  <li>Exchange rate &amp; price impact</li>
+                  <li>Estimated gas fee</li>
+                  <li>Minimum received amount</li>
+                </ul>
+                <p>Confirm in MetaMask by clicking <strong>"Confirm"</strong>.</p>
+              </div>
+            </div>
+            <div class="dapp-step">
+              <div class="dapp-step-num">5</div>
+              <div class="dapp-step-content">
+                <h4>View Transaction on Etherscan</h4>
+                <p>After the swap confirms, click the transaction link to view it on <a href="https://sepolia.etherscan.io" target="_blank" rel="noopener">Sepolia Etherscan</a>. Save the transaction hash for your submission!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OpenSea Tab -->
+        <div class="dapp-panel" id="panel-opensea">
+          <div class="dapp-intro">
+            <div class="dapp-logo">🌊</div>
+            <div>
+              <h3>OpenSea — NFT Marketplace</h3>
+              <p>OpenSea is the world's largest NFT marketplace. On the testnet, you can browse, mint, and list NFTs (Non-Fungible Tokens) to understand how digital ownership works on the blockchain.</p>
+            </div>
+          </div>
+
+          <div class="dapp-steps">
+            <div class="dapp-step">
+              <div class="dapp-step-num">1</div>
+              <div class="dapp-step-content">
+                <h4>Navigate to OpenSea Testnet</h4>
+                <p>Visit <a href="https://testnets.opensea.io" target="_blank" rel="noopener">testnets.opensea.io</a> — this is the testnet version of OpenSea.</p>
+              </div>
+            </div>
+            <div class="dapp-step">
+              <div class="dapp-step-num">2</div>
+              <div class="dapp-step-content">
+                <h4>Connect Your Wallet</h4>
+                <p>Click the wallet icon and connect your MetaMask. Ensure you're on the Sepolia network.</p>
+              </div>
+            </div>
+            <div class="dapp-step">
+              <div class="dapp-step-num">3</div>
+              <div class="dapp-step-content">
+                <h4>Browse NFT Collections</h4>
+                <p>Explore the testnet marketplace. You'll see test NFT collections. Browse through listings and understand attributes, traits, and pricing.</p>
+              </div>
+            </div>
+            <div class="dapp-step">
+              <div class="dapp-step-num">4</div>
+              <div class="dapp-step-content">
+                <h4>Understand NFT Concepts</h4>
+                <p><strong>Minting:</strong> creating a new NFT on the blockchain. <strong>Listing:</strong> putting an NFT up for sale. <strong>Transfer:</strong> sending an NFT to another wallet address. Each of these actions creates an on-chain transaction.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tx-flow">
+        <h3>Transaction Lifecycle</h3>
+        <div class="flow-steps">
+          <div class="flow-step">
+            <div class="flow-icon">📝</div>
+            <div class="flow-label">Initiate</div>
+            <div class="flow-desc">Start action in DApp</div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-icon">🔐</div>
+            <div class="flow-label">Sign</div>
+            <div class="flow-desc">Approve in MetaMask</div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-icon">⏳</div>
+            <div class="flow-label">Pending</div>
+            <div class="flow-desc">Broadcast to network</div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-icon">⛏️</div>
+            <div class="flow-label">Validate</div>
+            <div class="flow-desc">Validators confirm</div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-icon">✅</div>
+            <div class="flow-label">Confirmed</div>
+            <div class="flow-desc">On-chain forever</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BLOCK EXPLORER ==================== -->
+  <section class="section" id="explorer">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 — Explore</span>
+        <h2 class="section-title">Reading the <span class="gradient-text">Block Explorer</span></h2>
+        <p class="section-desc">Block explorers are your window into the blockchain. Learn to navigate Etherscan and interpret on-chain data like a pro.</p>
+      </div>
+
+      <div class="explorer-demo">
+        <div class="explorer-window">
+          <div class="explorer-toolbar">
+            <div class="explorer-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="explorer-url">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+              sepolia.etherscan.io/tx/0x1a2b...
+            </div>
+          </div>
+          <div class="explorer-body">
+            <div class="explorer-field">
+              <span class="ef-label">Transaction Hash:</span>
+              <span class="ef-value mono">0x1a2b3c4d5e6f7890abcdef1234567890abcdef1234567890abcdef1234567890</span>
+            </div>
+            <div class="explorer-field">
+              <span class="ef-label">Status:</span>
+              <span class="ef-value"><span class="status-badge success">✓ Success</span></span>
+            </div>
+            <div class="explorer-field">
+              <span class="ef-label">Block:</span>
+              <span class="ef-value mono">4,892,103</span>
+            </div>
+            <div class="explorer-field">
+              <span class="ef-label">Timestamp:</span>
+              <span class="ef-value">15 secs ago (Mar 01, 2026 07:20:00 AM UTC)</span>
+            </div>
+            <div class="explorer-divider"></div>
+            <div class="explorer-field">
+              <span class="ef-label">From:</span>
+              <span class="ef-value mono">0xYourWalletAddress1234567890abcdef12345678</span>
+            </div>
+            <div class="explorer-field">
+              <span class="ef-label">To:</span>
+              <span class="ef-value mono">0xUniswapRouterAddress567890abcdef1234567890</span>
+            </div>
+            <div class="explorer-field">
+              <span class="ef-label">Value:</span>
+              <span class="ef-value">0.01 ETH</span>
+            </div>
+            <div class="explorer-divider"></div>
+            <div class="explorer-field">
+              <span class="ef-label">Gas Price:</span>
+              <span class="ef-value">2.5 Gwei</span>
+            </div>
+            <div class="explorer-field">
+              <span class="ef-label">Gas Used:</span>
+              <span class="ef-value">152,847 / 200,000 (76.42%)</span>
+            </div>
+            <div class="explorer-field">
+              <span class="ef-label">Transaction Fee:</span>
+              <span class="ef-value">0.000382 ETH</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="explorer-tips">
+          <div class="tip-card">
+            <h4>🔍 Key Things to Check</h4>
+            <ul>
+              <li><strong>Status:</strong> "Success" means the transaction was processed correctly, "Failed" means an error occurred</li>
+              <li><strong>From/To:</strong> Verify these match your wallet and the DApp's contract address</li>
+              <li><strong>Value:</strong> The amount of ETH transferred in this transaction</li>
+              <li><strong>Gas Used:</strong> How much computation the transaction actually required</li>
+              <li><strong>Transaction Fee:</strong> Total cost = Gas Used × Gas Price</li>
+            </ul>
+          </div>
+          <div class="tip-card">
+            <h4>📋 For Your Submission</h4>
+            <p>You'll need to capture:</p>
+            <ul>
+              <li>Screenshot of the Etherscan transaction page</li>
+              <li>The transaction hash (long hex string starting with 0x)</li>
+              <li>Link to the transaction on Etherscan</li>
+              <li>Your wallet's public address</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECURITY ==================== -->
+  <section class="section section-alt" id="security">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06 — Protect</span>
+        <h2 class="section-title">Security <span class="gradient-text-alt">Best Practices</span></h2>
+        <p class="section-desc">In Web3, you are your own bank. There's no "forgot password" or "call customer support." Learn these practices to protect your assets.</p>
+      </div>
+
+      <div class="security-grid">
+        <div class="security-card" data-severity="critical">
+          <div class="severity-badge">CRITICAL</div>
+          <h3>🔐 Seed Phrase Protection</h3>
+          <ul>
+            <li>Write it on paper, never digitally</li>
+            <li>Store in a secure, fireproof location</li>
+            <li>Never share with anyone — EVER</li>
+            <li>Consider using a metal backup for fire resistance</li>
+          </ul>
+        </div>
+        <div class="security-card" data-severity="high">
+          <div class="severity-badge">HIGH</div>
+          <h3>🎣 Phishing Prevention</h3>
+          <ul>
+            <li>Always verify URLs before connecting wallet</li>
+            <li>Bookmark legitimate DApp URLs</li>
+            <li>Never click wallet-connect links in DMs</li>
+            <li>Double-check contract addresses on Etherscan</li>
+          </ul>
+        </div>
+        <div class="security-card" data-severity="high">
+          <div class="severity-badge">HIGH</div>
+          <h3>✅ Transaction Verification</h3>
+          <ul>
+            <li>Read MetaMask popups carefully before signing</li>
+            <li>Verify the contract address you're interacting with</li>
+            <li>Check token approval amounts — revoke unlimited approvals</li>
+            <li>Start with small amounts when trying new DApps</li>
+          </ul>
+        </div>
+        <div class="security-card" data-severity="medium">
+          <div class="severity-badge">MEDIUM</div>
+          <h3>🛡️ General Safety</h3>
+          <ul>
+            <li>Use a hardware wallet for significant holdings</li>
+            <li>Keep software updated (browser, MetaMask)</li>
+            <li>Use separate wallets for testing and real assets</li>
+            <li>Enable browser security extensions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SUBMISSION GENERATOR ==================== -->
+  <section class="section" id="submission">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">07 — Submit</span>
+        <h2 class="section-title">Submission <span class="gradient-text">Document Generator</span></h2>
+        <p class="section-desc">Fill in the details below to generate a formatted document you can use as a template for your <code>FirstName_LastName_Web3_Basics.pdf</code> submission.</p>
+      </div>
+
+      <form class="submission-form" id="submissionForm">
+        <div class="form-grid">
+          <!-- Personal Info -->
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="Enter your first name" required />
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Enter your last name" required />
+          </div>
+
+          <!-- Technical Info -->
+          <div class="form-group full-width">
+            <label for="walletAddress">Public Wallet Address</label>
+            <input type="text" id="walletAddress" placeholder="0x1234...abcdef (your MetaMask public address)" pattern="^0x[a-fA-F0-9]{40}$" />
+            <span class="form-hint">42-character hex string starting with 0x. Never share your private key!</span>
+          </div>
+
+          <div class="form-group">
+            <label for="testnetUsed">Testnet Used</label>
+            <select id="testnetUsed">
+              <option value="Sepolia">Sepolia</option>
+              <option value="Goerli">Goerli</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="dappUsed">DApp(s) Interacted With</label>
+            <input type="text" id="dappUsed" placeholder="e.g., Uniswap, OpenSea" />
+          </div>
+
+          <div class="form-group full-width">
+            <label for="txHash">Transaction Hash(es)</label>
+            <textarea id="txHash" rows="3" placeholder="Paste your transaction hash(es) here, one per line&#10;e.g., 0xabc123..."></textarea>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="etherscanLinks">Etherscan Link(s)</label>
+            <textarea id="etherscanLinks" rows="3" placeholder="Paste your Etherscan transaction URL(s) here, one per line&#10;e.g., https://sepolia.etherscan.io/tx/0xabc123..."></textarea>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="txTypes">Types of Transactions Performed</label>
+            <input type="text" id="txTypes" placeholder="e.g., Received testnet ETH from faucet, Token swap on Uniswap" />
+          </div>
+
+          <div class="form-group full-width">
+            <label for="errors">Errors Encountered &amp; Troubleshooting</label>
+            <textarea id="errors" rows="3" placeholder="Describe any errors you encountered and how you resolved them..."></textarea>
+          </div>
+
+          <!-- Reflection -->
+          <div class="form-group full-width">
+            <label for="reflection">
+              Written Reflection (300–500 words)
+              <span class="word-counter" id="wordCounter">0 / 300-500 words</span>
+            </label>
+            <textarea id="reflection" rows="12" placeholder="Write your reflection covering:&#10;&#10;1. Key blockchain concepts you learned&#10;2. Differences between centralized and decentralized applications&#10;3. Your understanding of smart contracts and their role in DApps&#10;4. Security considerations when using crypto wallets&#10;5. Challenges faced and how you overcame them"></textarea>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" class="btn btn-primary btn-lg" id="generateDoc">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            Generate Submission Document
+          </button>
+          <button type="button" class="btn btn-outline btn-lg" id="clearForm">Clear Form</button>
+        </div>
+      </form>
+
+      <!-- Generated Document Preview -->
+      <div class="doc-preview hidden" id="docPreview">
+        <div class="doc-header">
+          <h3>📄 Generated Submission Document</h3>
+          <div class="doc-actions">
+            <button class="btn btn-sm btn-primary" id="copyDoc">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+              Copy to Clipboard
+            </button>
+            <button class="btn btn-sm btn-outline" id="printDoc">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+              Print / Save as PDF
+            </button>
+          </div>
+        </div>
+        <div class="doc-content" id="docContent"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon">◆</span>
+          <span>Web3<span class="logo-accent">Basics</span></span>
+        </div>
+        <p class="footer-text">An interactive educational guide for blockchain &amp; Web3 fundamentals. Built for learning in a risk-free environment.</p>
+        <div class="footer-links">
+          <a href="https://ethereum.org" target="_blank" rel="noopener">Ethereum.org</a>
+          <a href="https://metamask.io" target="_blank" rel="noopener">MetaMask</a>
+          <a href="https://sepolia.etherscan.io" target="_blank" rel="noopener">Sepolia Etherscan</a>
+          <a href="https://docs.uniswap.org" target="_blank" rel="noopener">Uniswap Docs</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Web3 Basics — Educational Purposes Only. Not Financial Advice.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top hidden" id="scrollTop" aria-label="Scroll to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
